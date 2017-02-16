@@ -40,8 +40,8 @@ if (isset($_GET['h'])) {
 <?php
 foreach ($ids as $thisid) {
     echo "
-<button onclick=\"var ifr=document.getElementsByName('$thisid')[0]; ifr.src=ifr.src;\">Refresh $thisid</button>
-<iframe src=\"http://$thisid.ethosdistro.com/\" name=\"$thisid\" width=\"1600\" height=$h frameborder=\"0\" scrolling=\"no\"></iframe>
+<button onclick=\"var ifr=document.getElementsByName('$thisid')[0]; ifr.src=ifr.src;\">Refresh $thisid</button><br>
+<iframe src=\"http://$thisid.ethosdistro.com/\" name=\"$thisid\" width=\"1600\" height=$h frameborder=\"0\" scrolling=\"no\"></iframe><br>
     ";
 }
 
